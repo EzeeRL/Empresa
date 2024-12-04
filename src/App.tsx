@@ -1,23 +1,26 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
-import Hero from './components/Hero';
-import Services from './components/Services';
-import Portfolio from './components/Portfolio';
-import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Home from './pages/Home.jsx';
+import Frontend from './pages/Front.jsx';
+import BackendDevelopment from './pages/Back.jsx';
+import AutomationWithAI from "./pages/integracionIA.jsx" 
 
 function App() {
   return (
-    <div>
+    <Router>
       <Header />
       <main>
-        <Hero />
-        <Services />
-        <Portfolio />
-        <Contact />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/front" element={<Frontend />} />
+          <Route path="/back" element={<BackendDevelopment />} />
+          <Route path="/ia" element={<AutomationWithAI />} />
+        </Routes>
       </main>
       <Footer />
-    </div>
+    </Router>
   );
 }
 

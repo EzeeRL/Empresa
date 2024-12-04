@@ -19,7 +19,7 @@ const Hero = () => {
               Empezar Proyecto
               <ArrowRight size={20} className="ml-2" />
             </a>
-            <a href="#portfolio" className={styles.secondaryButton}>
+            <a href="#services" className={styles.secondaryButton}>
               Ver Portfolio
             </a>
           </div>

@@ -1,0 +1,54 @@
+.implementation-process {
+    padding: 2rem 1.5rem;
+    background-color: #fff;
+    color: var(--color-gray-50);
+}
+
+.title {
+    font-size: 2rem;
+    color: var(--color-primary);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.steps {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.step {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    border-left: 2px solid var(--color-primary);
+    padding-left: 1rem;
+}
+
+.step-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--color-primary);
+    color: var(--color-gray-50);
+    font-weight: bold;
+    border-radius: 50%;
+}
+
+.step-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.step-title {
+    font-size: 1.25rem;
+    color: var(--color-primary-hover);
+    margin-bottom: 0.5rem;
+}
+
+.step-description {
+    font-size: 1rem;
+    color: #000;
+}

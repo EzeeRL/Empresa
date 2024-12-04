@@ -1,0 +1,53 @@
+.backendDevelopment {
+    padding: 2rem 1rem;
+    font-family: Arial, sans-serif;
+    margin-top: 40px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.title {
+    font-size: 2.5rem;
+    color: #4f46e5;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    color: #6b7280;
+}
+
+.section {
+    margin-bottom: 2rem;
+}
+
+.sectionTitle {
+    font-size: 1.75rem;
+    color: #4f46e5;
+    margin-bottom: 1rem;
+}
+
+.technologyList,
+.practiceList,
+.optimizationList,
+.infrastructureList {
+    list-style: none;
+    padding: 0;
+}
+
+.technologyList li,
+.practiceList li,
+.optimizationList li,
+.infrastructureList li {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    color: #374151;
+}
+
+.sectionDescription {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #6b7280;
+}

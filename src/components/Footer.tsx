@@ -10,7 +10,7 @@ const Footer = () => {
           <div className={styles.about}>
             <div className={styles.logo}>
               <Code2 size={32} color="#818cf8" />
-              <span>TechWeave</span>
+              <span>TechJE</span>
             </div>
             <p className={styles.description}>
               Transformando el futuro digital con soluciones web innovadoras e IA.
@@ -23,8 +23,8 @@ const Footer = () => {
               <a href='#services' className={styles.listItem}>Desarrollo Frontend</a>
               <a href='#services' className={styles.listItem}>Desarrollo Backend</a>
               <a href='#services' className={styles.listItem}>Chatbots con IA</a>
-              <a href='#services' className={styles.listItem}>Integración WhatsApp</a>
-              <li className={styles.listItem}>Integración WhatsApp</li>
+              <a href='#services' className={styles.listItem}>Medios Audiovisuales y transmisiones</a>
+             
             </ul>
           </div>
 

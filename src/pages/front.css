@@ -1,0 +1,132 @@
+.frontend-page {
+    padding: 20px;
+    text-align: center;
+}
+
+.frontend-header {
+    background: #f9faff;
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.frontend-header h1 {
+    font-size: 2.8rem;
+    color: #4a4e69;
+}
+
+.frontend-header p {
+    font-size: 1.2rem;
+    color: #7a7f9a;
+    line-height: 1.6;
+}
+
+.frontend-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.frontend-feature {
+    background: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.frontend-feature h2 {
+    font-size: 1.5rem;
+    color: #4a4e69;
+    margin-bottom: 10px;
+}
+
+.frontend-feature p {
+    font-size: 1rem;
+    color: #7a7f9a;
+    line-height: 1.6;
+}
+
+.frontend-portfolio {
+    margin: 40px 0;
+}
+
+.frontend-portfolio h2 {
+    font-size: 2rem;
+    color: #4a4e69;
+    margin-bottom: 20px;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.portfolio-item {
+    background: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+}
+
+.portfolio-item p {
+    padding: 10px;
+    font-size: 0.9rem;
+    color: #4a4e69;
+}
+
+.frontend-cta {
+    margin-top: 30px;
+}
+
+.cta-primary {
+    background: #5855fc;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.cta-secondary {
+    background: transparent;
+    border: 2px solid #5855fc;
+    color: #5855fc;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.portfolio-item {
+    background: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+}
+
+.portfolio-item p {
+    padding: 10px;
+    font-size: 0.9rem;
+    color: #4a4e69;
+}

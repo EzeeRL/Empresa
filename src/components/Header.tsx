@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Menu, X, Code2 } from 'lucide-react';
 import styles from '../styles/Header.module.css';
+import { Link } from 'react-router-dom';
+
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,13 +12,17 @@ const Header = () => {
       <nav className={`container ${styles.nav}`}>
         <div className={styles.logo}>
           <Code2 size={32} color="#4f46e5" />
-          <span>TechWeave</span>
+          <span>TechJE</span>
         </div>
 
         <div className={styles.desktopNav}>
+        <Link to="/" className="home-link">
+    Ir a Inicio
+  </Link>
           <a href="#services" className={styles.navLink}>Servicios</a>
           <a href="#portfolio" className={styles.navLink}>Portfolio</a>
           <a href="#contact" className={styles.contactButton}>Contactar</a>
+
         </div>
 
         <button

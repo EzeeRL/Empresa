@@ -1,5 +1,6 @@
 import React from 'react';
-import { Globe, Server, Bot, MessageSquare, Sparkles, Shield } from 'lucide-react';
+import { Globe, Server, Bot, MessageSquare, Sparkles, Shield, Video } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import styles from '../styles/Services.module.css';
 
 const Services = () => {
@@ -7,32 +8,39 @@ const Services = () => {
     {
       icon: <Globe size={32} color="#4f46e5" />,
       title: "Desarrollo Frontend",
-      description: "Interfaces modernas y responsivas con las últimas tecnologías web."
+      description: "Interfaces modernas y responsivas con las últimas tecnologías web.",
+      link: "/front" // Ruta para este servicio
     },
     {
       icon: <Server size={32} color="#4f46e5" />,
       title: "Desarrollo Backend",
-      description: "APIs robustas y escalables para potenciar tu aplicación."
+      description: "APIs robustas y escalables para potenciar tu aplicación.",
+      link: "/back"
     },
     {
       icon: <Bot size={32} color="#4f46e5" />,
-      title: "Chatbots con IA",
-      description: "Automatización inteligente para mejorar la atención al cliente."
+      title: "Integraciones con IA",
+      description: "Automatización inteligente para mejorar la atención al cliente y diferentes servicios.",
+      link: "/ia"
     },
     {
-      icon: <MessageSquare size={32} color="#4f46e5" />,
-      title: "Integración WhatsApp",
-      description: "Conecta tu negocio con clientes a través de WhatsApp Business API."
-    },
+      icon: <Video size={32} color="#4f46e5" />, // Cambié el icono a uno representativo
+      title: "Medios Audiovisuales y Televisión",
+      description: "Producción, edición y transmisión de contenido audiovisual de alta calidad para medios y plataformas digitales.",
+      link: "/services/audiovisuales-television"
+    }
+,    
     {
       icon: <Sparkles size={32} color="#4f46e5" />,
       title: "UX/UI Design",
-      description: "Diseños intuitivos centrados en la experiencia del usuario."
+      description: "Diseños intuitivos centrados en la experiencia del usuario.",
+      link: "/services/ux-ui-design"
     },
     {
       icon: <Shield size={32} color="#4f46e5" />,
       title: "Seguridad Web",
-      description: "Protección robusta para tu aplicación y datos."
+      description: "Protección robusta para tu aplicación y datos.",
+      link: "/services/web-security"
     }
   ];
 
@@ -58,6 +66,9 @@ const Services = () => {
               <p className={styles.cardDescription}>
                 {service.description}
               </p>
+              <Link to={service.link}>
+                <a className={styles.viewButton}>Ver Más</a> {/* Botón con enlace */}
+              </Link>
             </div>
           ))}
         </div>
