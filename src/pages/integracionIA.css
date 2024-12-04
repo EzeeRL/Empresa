@@ -2,6 +2,13 @@
     margin-top: 80px;
 }
 
+.iaImage {
+    scale: 0.7;
+    height: 500px;
+    margin-left: 60%;
+    margin-top: -310px;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -25,6 +32,10 @@
 
 .section {
     margin-bottom: 40px;
+}
+
+.section2 {
+    margin-top: -100px;
 }
 
 .section-title {

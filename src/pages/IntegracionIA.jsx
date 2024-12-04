@@ -32,10 +32,15 @@ const AutomationWithAI = () => {
             <li>Procesamiento y generación de reportes en tiempo real.</li>
             <li>Interacciones multilingües para clientes globales.</li>
           </ul>
+          <img
+            className="iaImage"
+            src="https://media.istockphoto.com/id/1482901838/es/vector/inteligencia-artificial-3d-red-neuronal-cerebral-digital-servidores-de-ia-y-tecnolog%C3%ADa-de.jpg?s=612x612&w=0&k=20&c=62JWPN09SSzc8WGQjvxoD8dg3501gg0FBDcKt3t3rW0="
+            alt=""
+          />
         </div>
 
         {/* Funcionalidades avanzadas */}
-        <div className="section">
+        <div className="section2">
           <h2 className="section-title">Integraciones poderosas</h2>
           <p className="section-description">
             Los chatbots no solo responden preguntas, también se integran con
