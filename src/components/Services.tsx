@@ -29,7 +29,7 @@ const Services = () => {
       description: "Producción, edición y transmisión de contenido audiovisual de alta calidad para medios y plataformas digitales.",
       link: "/services/audiovisuales-television"
     }
-,    
+    ,
     {
       icon: <Sparkles size={32} color="#4f46e5" />,
       title: "UX/UI Design",
@@ -53,7 +53,7 @@ const Services = () => {
             Soluciones completas para tu presencia digital
           </p>
         </div>
-        
+
         <div className={styles.grid}>
           {services.map((service, index) => (
             <div key={index} className={styles.card}>
@@ -63,13 +63,18 @@ const Services = () => {
               <h3 className={styles.cardTitle}>
                 {service.title}
               </h3>
-              <p className={styles.cardDescription}>
-                {service.description}
-              </p>
-              <Link to={service.link}>
-                <a className={styles.viewButton}>Ver Más</a> {/* Botón con enlace */}
-              </Link>
+              <div className={styles.cardContent}>
+                <p className={styles.cardDescription}>
+                  {service.description}
+                </p>
+              </div>
+              <div className={styles.containerButton}>
+                <Link to={service.link}>
+                  <a className={styles.viewButton}>Ver Más</a> {/* Botón con enlace */}
+                </Link>
+              </div>
             </div>
+
           ))}
         </div>
       </div>

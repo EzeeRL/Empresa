@@ -30,6 +30,15 @@
   border: 1px solid var(--color-gray-100);
   border-radius: 1rem;
   transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.cardContent {
+  flex-grow: 1;
+  margin-bottom: 1rem;
 }
 
 .card:hover {
@@ -38,7 +47,10 @@
 }
 
 .iconWrapper {
-  display: inline-block;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 0.75rem;
   background: #eef2ff;
   border-radius: 0.5rem;
@@ -53,6 +65,27 @@
 
 .cardDescription {
   color: var(--color-gray-600);
+}
+
+.containerButton {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.viewButton {
+  background: var(--color-primary);
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  border-radius: 27px;
+  text-decoration: none;
+  transition: background-color 0.2s;
+  align-self: flex-end;
+  margin-top: 1rem;
+}
+
+.viewButton:hover {
+  background: var(--color-primary-hover);
 }
 
 @media (min-width: 768px) {

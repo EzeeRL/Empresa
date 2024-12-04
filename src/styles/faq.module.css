@@ -4,19 +4,19 @@
     font-family: Arial, sans-serif;
 }
 
-.faq-title {
+.faqTitle {
     font-size: 2rem;
     text-align: center;
     color: #4f46e5;
     margin-bottom: 1.5rem;
 }
 
-.faq-list {
+.faqList {
     max-width: 800px;
     margin: 0 auto;
 }
 
-.faq-item {
+.faqItem {
     background: #ffffff;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -26,11 +26,11 @@
     transition: all 0.3s ease;
 }
 
-.faq-item:hover {
+.faqItem:hover {
     border-color: #4f46e5;
 }
 
-.faq-question {
+.faqQuestion {
     font-size: 1.2rem;
     font-weight: bold;
     display: flex;
@@ -39,12 +39,12 @@
     color: #333;
 }
 
-.toggle-icon {
+.toggleIcon {
     font-size: 1.5rem;
     color: #4f46e5;
 }
 
-.faq-answer {
+.faqAnswer {
     margin-top: 0.5rem;
     font-size: 1rem;
     color: #555;

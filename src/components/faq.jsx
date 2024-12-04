@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./faq.css";
+import styles from '../styles/faq.module.css';
 const FAQ = () => {
   const [openQuestion, setOpenQuestion] = useState(null);
 
@@ -51,23 +51,23 @@ const FAQ = () => {
   ];
 
   return (
-    <section className="faq">
-      <div className="container">
-        <h2 className="faq-title">Preguntas Frecuentes</h2>
-        <div className="faq-list">
+    <section className={styles.faq}>
+      <div className={styles.container}>
+        <h2 className={styles.faqTitle}>Preguntas Frecuentes</h2>
+        <div className={styles.faqList}>
           {questions.map((item, index) => (
-            <div key={index} className="faq-item">
+            <div key={index} className={styles.faqItem}>
               <div
-                className="faq-question"
+                className={styles.faqQuestion}
                 onClick={() => toggleQuestion(index)}
               >
                 {item.question}
-                <span className="toggle-icon">
+                <span className={styles.toggleIcon}>
                   {openQuestion === index ? "-" : "+"}
                 </span>
               </div>
               {openQuestion === index && (
-                <div className="faq-answer">{item.answer}</div>
+                <div className={styles.faqAnswer}>{item.answer}</div>
               )}
             </div>
           ))}

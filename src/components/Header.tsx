@@ -16,11 +16,11 @@ const Header = () => {
         </div>
 
         <div className={styles.desktopNav}>
-        <Link to="/" className="home-link">
-    Ir a Inicio
-  </Link>
+          <Link to="/" className={styles.navLink}>
+            Inicio
+          </Link>
           <a href="#services" className={styles.navLink}>Servicios</a>
-          <a href="#portfolio" className={styles.navLink}>Portfolio</a>
+          <a href="#portfolio" className={styles.navLink}>Proceso</a>
           <a href="#contact" className={styles.contactButton}>Contactar</a>
 
         </div>
@@ -36,8 +36,10 @@ const Header = () => {
         <div
           className={`${styles.mobileMenu} ${isMenuOpen ? styles.open : ''}`}
         >
+          <Link to="/" className={styles.navLink}>
+            Inicio
+          </Link>
           <a href="#services" className={styles.navLink}>Servicios</a>
-          <a href="#portfolio" className={styles.navLink}>Portfolio</a>
           <a href="#process" className={styles.navLink}>Proceso</a>
           <a href="#contact" className={styles.contactButton}>Contactar</a>
         </div>

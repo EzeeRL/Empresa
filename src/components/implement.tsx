@@ -1,5 +1,5 @@
 import React from "react";
-import "./ImplementationProcess.css";
+import styles from '../styles/ImplementationProcess.module.css';
 
 const ImplementationProcess = () => {
   const steps = [
@@ -29,16 +29,19 @@ const ImplementationProcess = () => {
   ];
 
   return (
-    <section className="implementation-process">
-      <h2 className="title">Proceso de Implementación</h2>
-      <div className="steps">
+    <section className={styles.implementationProcess}>
+      <h2 className={styles.title}>Proceso de Implementación</h2>
+      <div className={styles.steps}>
         {steps.map((step) => (
-          <div key={step.number} className="step">
-            <div className="step-number">{step.number}</div>
-            <div className="step-content">
-              <h3 className="step-title">{step.title}</h3>
-              <p className="step-description">{step.description}</p>
+          <div key={step.number} className={styles.steps}>
+            {/* <div className={styles.containerNumbers}> */}
+            {/* </div> */}
+            <div className={styles.stepContent}>
+              <div className={styles.stepNumber}>{step.number}</div>
+              <h3 className={styles.stepTitle}>{step.title}</h3>
+              <p className={styles.stepDescription}>{step.description}</p>
             </div>
+            <hr className={styles.line} />
           </div>
         ))}
       </div>
