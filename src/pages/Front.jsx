@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./front.css";
 import { ArrowRight } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
 
 function Frontend() {
   const [visibleProjects, setVisibleProjects] = useState(3); // Mostrar 3 proyectos inicialmente
@@ -63,10 +64,11 @@ function Frontend() {
         <div className="container-info-header">
           <h1 className="title">Desarrollo Frontend</h1>
           <p>
-            Creamos interfaces que no solo lucen increíbles, sino que también
-            están diseñadas para captar y retener a tus usuarios. Nuestro
-            enfoque se basa en diseño centrado en el usuario, rendimiento
-            superior y tecnologías modernas.
+            Creamos interfaces que no solo <b>lucen increíbles</b>, sino que
+            también están diseñadas para <b>captar</b> y{" "}
+            <b>retener a tus usuarios</b>. Nuestro enfoque se basa en diseño
+            centrado en el <b>usuario</b>, rendimiento <b>superior</b> y
+            <b> tecnologías modernas</b>.
           </p>
         </div>
       </header>
@@ -103,39 +105,78 @@ function Frontend() {
       <section className="frontend-portfolio">
         <h2 className="title">Ejemplos de Nuestro Trabajo</h2>
         <div className="portfolio-grid">
-          {projects.slice(0, visibleProjects).map((project) => (
-            /* From Uiverse.io by Yaya12085 */
-            <div key={project.id} className="card">
-              <div className="container-image-card">
-                <img
-                  src={project.img}
-                  alt="Imágen del Proyecto"
-                  className="img-card"
-                />
-              </div>
-              <div className="content-card">
-                <h1 className="title-card">{project.title}</h1>
-                <p className="description-card">{project.description}</p>
-              </div>
-              <div className="container-button" href="#">
-                <a href="#contact" className="button">
-                  Ver Proyecto
-                  <ArrowRight size={20} className="ml-2" />
-                </a>
-              </div>
-            </div>
-          ))}
+          <AnimatePresence>
+            {projects.slice(0, visibleProjects).map((project) => (
+              /* From Uiverse.io by Yaya12085 */
+              <motion.div
+                key={project.id}
+                className="card"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.3 }}
+              >
+                <div className="container-image-card">
+                  <img
+                    src={project.img}
+                    alt="Imágen del Proyecto"
+                    className="img-card"
+                  />
+                </div>
+                <div className="content-card">
+                  <h1 className="title-card">{project.title}</h1>
+                  <p className="description-card">{project.description}</p>
+                </div>
+                <div className="container-button" href="#">
+                  <a href="#contact" className="button">
+                    Ver Proyecto
+                    <ArrowRight size={20} className="" />
+                  </a>
+                </div>
+              </motion.div>
+            ))}
+          </AnimatePresence>
         </div>
 
         <div className="project-buttons">
           {visibleProjects < projects.length && (
             <button className="cta-primary" onClick={showMoreProjects}>
-              Ver Más Proyectos
+              Ver más Proyectos{" "}
+              <svg
+                width="25px"
+                height="100%"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 5V19M5 12H19"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
             </button>
           )}
           {visibleProjects > 3 && (
             <button className="cta-secondary" onClick={showLessProjects}>
-              Ver Menos Proyectos
+              Ver menos Proyectos{" "}
+              <svg
+                width="25px"
+                height="100%"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5 12H19"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
             </button>
           )}
         </div>

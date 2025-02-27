@@ -22,7 +22,7 @@
   align-items: center;
   gap: 0.5rem;
   font-weight: bold;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 .desktopNav {
@@ -30,6 +30,10 @@
 }
 
 .navLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
   color: var(--color-gray-600);
   text-decoration: none;
   font-size: 1rem;
@@ -41,15 +45,20 @@
 }
 
 .contactButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
   background: var(--color-primary);
   color: #fff;
   padding: 0.5rem 1.5rem;
   border-radius: 27px;
   text-decoration: none;
-  transition: background-color 0.2s;
+  transition: 0.3s;
 }
 
 .contactButton:hover {
+  transform: scale(1.03);
   background: var(--color-primary-hover);
 }
 
@@ -100,3 +109,30 @@
     display: none;
   }
 }
+
+/* .typing {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: var(--color-gray-900);
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid var(--color-gray-900);
+  width: 0;
+  animation: typing 0.8s steps(4, end) forwards, blink 0.8s infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+} */

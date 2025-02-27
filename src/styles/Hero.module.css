@@ -34,9 +34,10 @@
 }
 
 .primaryButton {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
+  gap: 5px;
   background: var(--color-primary);
   color: #fff;
   padding: 0.75rem 2rem;
