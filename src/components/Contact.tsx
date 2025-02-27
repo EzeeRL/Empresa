@@ -1,8 +1,13 @@
-import React from 'react';
-import { Mail, Phone, MapPin } from 'lucide-react';
-import styles from '../styles/Contact.module.css';
+import React from "react";
+import { Mail, Phone, MapPin, Copy } from "lucide-react";
+import styles from "../styles/Contact.module.css";
 
 const Contact = () => {
+  const handleCopy = (text) => {
+    navigator.clipboard.writeText(text);
+    alert("¡Información copiada exitosamente!");
+  };
+
   return (
     <section id="contact" className={styles.contact}>
       <div className="container">
@@ -21,7 +26,15 @@ const Contact = () => {
               </div>
               <div className={styles.infoContent}>
                 <h3>Email</h3>
-                <p>emaildelaempresa@gmail.com</p>
+                <div className={styles.containerCopy}>
+                  <p>emaildelaempresa@gmail.com</p>
+                  <button
+                    className={styles.copyButton}
+                    onClick={() => handleCopy("emaildelaempresa@gmail.com")}
+                  >
+                    <Copy size={20} color="#4f46e5" />
+                  </button>
+                </div>
               </div>
             </div>
 
@@ -31,7 +44,15 @@ const Contact = () => {
               </div>
               <div className={styles.infoContent}>
                 <h3>Teléfono</h3>
-                <p>+54 9 11 6359 2430</p>
+                <div className={styles.containerCopy}>
+                  <p>+54 9 11 6359 2430</p>
+                  <button
+                    className={styles.copyButton}
+                    onClick={() => handleCopy("+54 9 11 6359 2430")}
+                  >
+                    <Copy size={20} color="#4f46e5" />
+                  </button>
+                </div>
               </div>
             </div>
 

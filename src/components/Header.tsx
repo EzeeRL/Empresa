@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
-import { Menu, X, Code2 } from 'lucide-react';
-import styles from '../styles/Header.module.css';
-import { Link } from 'react-router-dom';
-
+import React, { useState } from "react";
+import { Menu, X, Code2 } from "lucide-react";
+import styles from "../styles/Header.module.css";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,10 +18,15 @@ const Header = () => {
           <Link to="/" className={styles.navLink}>
             Inicio
           </Link>
-          <a href="#services" className={styles.navLink}>Servicios</a>
-          <a href="#portfolio" className={styles.navLink}>Proceso</a>
-          <a href="#contact" className={styles.contactButton}>Contactar</a>
-
+          <a href="#services" className={styles.navLink}>
+            Servicios
+          </a>
+          <a href="#proceso" className={styles.navLink}>
+            Proceso
+          </a>
+          <a href="#contact" className={styles.contactButton}>
+            Contactar
+          </a>
         </div>
 
         <button
@@ -34,14 +38,20 @@ const Header = () => {
         </button>
 
         <div
-          className={`${styles.mobileMenu} ${isMenuOpen ? styles.open : ''}`}
+          className={`${styles.mobileMenu} ${isMenuOpen ? styles.open : ""}`}
         >
           <Link to="/" className={styles.navLink}>
             Inicio
           </Link>
-          <a href="#services" className={styles.navLink}>Servicios</a>
-          <a href="#process" className={styles.navLink}>Proceso</a>
-          <a href="#contact" className={styles.contactButton}>Contactar</a>
+          <a href="#services" className={styles.navLink}>
+            Servicios
+          </a>
+          <a href="#process" className={styles.navLink}>
+            Proceso
+          </a>
+          <a href="#contact" className={styles.contactButton}>
+            Contactar
+          </a>
         </div>
       </nav>
     </header>

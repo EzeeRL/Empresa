@@ -1,5 +1,5 @@
 import React from "react";
-import styles from '../styles/ImplementationProcess.module.css';
+import styles from "../styles/ImplementationProcess.module.css";
 
 const ImplementationProcess = () => {
   const steps = [
@@ -29,21 +29,23 @@ const ImplementationProcess = () => {
   ];
 
   return (
-    <section className={styles.implementationProcess}>
-      <h2 className={styles.title}>Proceso de Implementación</h2>
-      <div className={styles.steps}>
-        {steps.map((step) => (
-          <div key={step.number} className={styles.steps}>
-            {/* <div className={styles.containerNumbers}> */}
-            {/* </div> */}
-            <div className={styles.stepContent}>
-              <div className={styles.stepNumber}>{step.number}</div>
-              <h3 className={styles.stepTitle}>{step.title}</h3>
-              <p className={styles.stepDescription}>{step.description}</p>
+    <section className={styles.implementationProcess} id="proceso">
+      <div className={styles.container}>
+        <h2 className={styles.title}>Proceso de Implementación</h2>
+        <div className={styles.steps}>
+          {steps.map((step) => (
+            <div key={step.number} className={styles.steps}>
+              {/* <div className={styles.containerNumbers}> */}
+              {/* </div> */}
+              <div className={styles.stepContent}>
+                <div className={styles.stepNumber}>{step.number}</div>
+                <h3 className={styles.stepTitle}>{step.title}</h3>
+                <p className={styles.stepDescription}>{step.description}</p>
+              </div>
+              <hr className={styles.line} />
             </div>
-            <hr className={styles.line} />
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );

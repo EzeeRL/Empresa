@@ -14,16 +14,21 @@ const BackendDevelopment = () => {
         </div>
 
         {/* Tecnologías */}
-        <div className="section">
-          <h2 className="sectionTitle">Tecnologías que dominamos</h2>
-          <ul className="technologyList">
-            <li>Python (FastAPI, Flask)</li>
-            <li>Node.js (Express, Nest.js)</li>
-            <li>C# (.NET Core)</li>
-            <li>Bases de datos: PostgreSQL, MySQL, SQL Server, Redis</li>
-            <li>Infraestructura: Docker, RabbitMQ</li>
-            <li>Microservicios para sistemas escalables y modulares</li>
-          </ul>
+        <div className="section tecnologias">
+          <div className="list-tecnologias">
+            <h2 className="sectionTitle">Tecnologías que dominamos</h2>
+            <ul className="technologyList">
+              <li>Python (FastAPI, Flask)</li>
+              <li>Node.js (Express, Nest.js)</li>
+              <li>C# (.NET Core)</li>
+              <li>Bases de datos: PostgreSQL, MySQL, SQL Server, Redis</li>
+              <li>Infraestructura: Docker, RabbitMQ</li>
+              <li>Microservicios para sistemas escalables y modulares</li>
+            </ul>
+          </div>
+          <div className="img-tecnologias">
+            <img src="public\Back\img-1-back.png" alt="" className="img" />
+          </div>
         </div>
 
         {/* Buenas prácticas */}

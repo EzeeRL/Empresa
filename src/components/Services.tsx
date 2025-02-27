@@ -1,47 +1,57 @@
-import React from 'react';
-import { Globe, Server, Bot, MessageSquare, Sparkles, Shield, Video } from 'lucide-react';
-import { Link } from 'react-router-dom';
-import styles from '../styles/Services.module.css';
+import {
+  Globe,
+  Server,
+  Bot,
+  MessageSquare,
+  Sparkles,
+  Shield,
+  Video,
+} from "lucide-react";
+import { Link } from "react-router-dom";
+import styles from "../styles/Services.module.css";
 
 const Services = () => {
   const services = [
     {
       icon: <Globe size={32} color="#4f46e5" />,
       title: "Desarrollo Frontend",
-      description: "Interfaces modernas y responsivas con las últimas tecnologías web.",
-      link: "/front" // Ruta para este servicio
+      description:
+        "Interfaces modernas y responsivas con las últimas tecnologías web.",
+      link: "/front", // Ruta para este servicio
     },
     {
       icon: <Server size={32} color="#4f46e5" />,
       title: "Desarrollo Backend",
       description: "APIs robustas y escalables para potenciar tu aplicación.",
-      link: "/back"
+      link: "/back",
     },
     {
       icon: <Bot size={32} color="#4f46e5" />,
       title: "Integraciones con IA",
-      description: "Automatización inteligente para mejorar la atención al cliente y diferentes servicios.",
-      link: "/ia"
+      description:
+        "Automatización inteligente para mejorar la atención al cliente y diferentes servicios.",
+      link: "/ia",
+    },
+    {
+      icon: <Sparkles size={32} color="#4f46e5" />,
+      title: "UX/UI Design",
+      description:
+        "Diseños intuitivos centrados en la experiencia del usuario.",
+      link: "/services/ux-ui-design",
     },
     {
       icon: <Video size={32} color="#4f46e5" />, // Cambié el icono a uno representativo
       title: "Medios Audiovisuales y Televisión",
-      description: "Producción, edición y transmisión de contenido audiovisual de alta calidad para medios y plataformas digitales.",
-      link: "/services/audiovisuales-television"
-    }
-    ,
-    {
-      icon: <Sparkles size={32} color="#4f46e5" />,
-      title: "UX/UI Design",
-      description: "Diseños intuitivos centrados en la experiencia del usuario.",
-      link: "/services/ux-ui-design"
+      description:
+        "Producción, edición y transmisión de contenido audiovisual de alta calidad para medios y plataformas digitales.",
+      link: "/services/audiovisuales-television",
     },
     {
       icon: <Shield size={32} color="#4f46e5" />,
       title: "Seguridad Web",
       description: "Protección robusta para tu aplicación y datos.",
-      link: "/services/web-security"
-    }
+      link: "/services/web-security",
+    },
   ];
 
   return (
@@ -57,24 +67,18 @@ const Services = () => {
         <div className={styles.grid}>
           {services.map((service, index) => (
             <div key={index} className={styles.card}>
-              <div className={styles.iconWrapper}>
-                {service.icon}
-              </div>
-              <h3 className={styles.cardTitle}>
-                {service.title}
-              </h3>
+              <div className={styles.iconWrapper}>{service.icon}</div>
+              <h3 className={styles.cardTitle}>{service.title}</h3>
               <div className={styles.cardContent}>
-                <p className={styles.cardDescription}>
-                  {service.description}
-                </p>
+                <p className={styles.cardDescription}>{service.description}</p>
               </div>
               <div className={styles.containerButton}>
                 <Link to={service.link}>
-                  <a className={styles.viewButton}>Ver Más</a> {/* Botón con enlace */}
+                  <a className={styles.viewButton}>Ver Más</a>{" "}
+                  {/* Botón con enlace */}
                 </Link>
               </div>
             </div>
-
           ))}
         </div>
       </div>

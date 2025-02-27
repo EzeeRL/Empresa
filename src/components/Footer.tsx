@@ -38,7 +38,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className={styles.section}>
+          {/* <div className={styles.section}>
             <h3>Síguenos</h3>
             <div className={styles.social}>
               <a href="#" className={styles.socialLink}>
@@ -51,7 +51,7 @@ const Footer = () => {
                 <Twitter size={24} />
               </a>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className={styles.copyright}>

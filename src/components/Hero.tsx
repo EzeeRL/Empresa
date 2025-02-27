@@ -1,10 +1,10 @@
-import React from 'react';
-import { ArrowRight } from 'lucide-react';
-import styles from '../styles/Hero.module.css';
+import React from "react";
+import { ArrowRight } from "lucide-react";
+import styles from "../styles/Hero.module.css";
 
 const Hero = () => {
   return (
-    <section className={styles.hero} id='hero'>
+    <section className={styles.hero} id="hero">
       <div className="container">
         <div className={styles.content}>
           <h1 className={styles.title}>
@@ -12,7 +12,8 @@ const Hero = () => {
             <span className={styles.highlight}> Experiencias Digitales</span>
           </h1>
           <p className={styles.description}>
-            Desarrollamos soluciones web innovadoras integrando IA para potenciar tu presencia digital
+            Desarrollamos soluciones web innovadoras integrando IA para
+            potenciar tu presencia digital
           </p>
           <div className={styles.buttons}>
             <a href="#contact" className={styles.primaryButton}>
@@ -20,7 +21,7 @@ const Hero = () => {
               <ArrowRight size={20} className="ml-2" />
             </a>
             <a href="#services" className={styles.secondaryButton}>
-              Ver Portfolio
+              Ver Servicios
             </a>
           </div>
         </div>

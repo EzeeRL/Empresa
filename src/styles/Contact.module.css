@@ -55,6 +55,11 @@
   color: var(--color-gray-600);
 }
 
+.containerCopy {
+  display: flex;
+  gap: 1rem;
+}
+
 .form {
   display: flex;
   flex-direction: column;

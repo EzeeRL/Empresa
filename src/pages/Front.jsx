@@ -60,13 +60,15 @@ function Frontend() {
   return (
     <div className="frontend-page">
       <header className="frontend-header">
-        <h1 className="title">Desarrollo Frontend</h1>
-        <p>
-          Creamos interfaces que no solo lucen increíbles, sino que también
-          están diseñadas para captar y retener a tus usuarios. Nuestro enfoque
-          se basa en diseño centrado en el usuario, rendimiento superior y
-          tecnologías modernas.
-        </p>
+        <div className="container-info-header">
+          <h1 className="title">Desarrollo Frontend</h1>
+          <p>
+            Creamos interfaces que no solo lucen increíbles, sino que también
+            están diseñadas para captar y retener a tus usuarios. Nuestro
+            enfoque se basa en diseño centrado en el usuario, rendimiento
+            superior y tecnologías modernas.
+          </p>
+        </div>
       </header>
 
       <section className="frontend-content">
@@ -108,7 +110,7 @@ function Frontend() {
                 <img
                   src={project.img}
                   alt="Imágen del Proyecto"
-                  className="img"
+                  className="img-card"
                 />
               </div>
               <div className="content-card">
@@ -127,7 +129,7 @@ function Frontend() {
 
         <div className="project-buttons">
           {visibleProjects < projects.length && (
-            <button className="cta-secondary" onClick={showMoreProjects}>
+            <button className="cta-primary" onClick={showMoreProjects}>
               Ver Más Proyectos
             </button>
           )}
