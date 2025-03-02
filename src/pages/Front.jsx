@@ -61,7 +61,7 @@ function Frontend() {
   return (
     <div className="frontend-page">
       <header className="frontend-header">
-        <div className="container-info-header">
+        <div className="container-info-header-front">
           <h1 className="title">Desarrollo Frontend</h1>
           <p>
             Creamos interfaces que no solo <b>lucen increíbles</b>, sino que

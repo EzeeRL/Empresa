@@ -34,9 +34,7 @@ const ImplementationProcess = () => {
         <h2 className={styles.title}>Proceso de Implementación</h2>
         <div className={styles.steps}>
           {steps.map((step) => (
-            <div key={step.number} className={styles.steps}>
-              {/* <div className={styles.containerNumbers}> */}
-              {/* </div> */}
+            <div key={step.number} className={styles.step}>
               <div className={styles.stepContent}>
                 <div className={styles.stepNumber}>{step.number}</div>
                 <h3 className={styles.stepTitle}>{step.title}</h3>

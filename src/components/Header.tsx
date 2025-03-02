@@ -67,7 +67,7 @@ const Header = () => {
                 stroke-linejoin="round"
               />
             </svg>
-            Proceso
+            Implementación
           </a>
           <a href="#contact" className={styles.contactButton}>
             Contactar
@@ -107,7 +107,7 @@ const Header = () => {
             Servicios
           </a>
           <a href="#process" className={styles.navLink}>
-            Proceso
+            Implementación
           </a>
           <a href="#contact" className={styles.contactButton}>
             Contactar
