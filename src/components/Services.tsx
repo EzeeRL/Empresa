@@ -20,11 +20,13 @@ const Services = () => {
       link: "/front", // Ruta para este servicio
     },
     {
-      icon: <Server size={32} color="#4f46e5" />,
-      title: "Desarrollo Backend",
-      description: "APIs robustas y escalables para potenciar tu aplicación.",
-      link: "/back",
+      icon: <Video size={32} color="#4f46e5" />, // Cambié el icono a uno representativo
+      title: "Medios Audiovisuales y Televisión",
+      description:
+        "Producción, edición y transmisión de contenido audiovisual de alta calidad para medios y plataformas digitales.",
+      link: "/audiovisual",
     },
+
     {
       icon: <Bot size={32} color="#4f46e5" />,
       title: "Integraciones con IA",
@@ -37,14 +39,14 @@ const Services = () => {
       title: "UX/UI Design",
       description:
         "Diseños intuitivos centrados en la experiencia del usuario.",
-      link: "/services/ux-ui-design",
+      link: "/ux-ui",
     },
+
     {
-      icon: <Video size={32} color="#4f46e5" />, // Cambié el icono a uno representativo
-      title: "Medios Audiovisuales y Televisión",
-      description:
-        "Producción, edición y transmisión de contenido audiovisual de alta calidad para medios y plataformas digitales.",
-      link: "/services/audiovisuales-television",
+      icon: <Server size={32} color="#4f46e5" />,
+      title: "Desarrollo Backend",
+      description: "APIs robustas y escalables para potenciar tu aplicación.",
+      link: "/back",
     },
     {
       icon: <Shield size={32} color="#4f46e5" />,

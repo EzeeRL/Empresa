@@ -1,6 +1,6 @@
-import React from 'react';
-import { Code2, Github, Linkedin, Twitter } from 'lucide-react';
-import styles from '../styles/Footer.module.css';
+import React from "react";
+import { Code2, Github, Linkedin, Twitter } from "lucide-react";
+import styles from "../styles/Footer.module.css";
 
 const Footer = () => {
   return (
@@ -13,18 +13,26 @@ const Footer = () => {
               <span>TechJE</span>
             </div>
             <p className={styles.description}>
-              Transformando el futuro digital con soluciones web innovadoras e IA.
+              Transformando el futuro digital con soluciones web innovadoras e
+              IA.
             </p>
           </div>
 
           <div className={styles.section}>
             <h3>Servicios</h3>
             <ul className={styles.list}>
-              <a href='#services' className={styles.listItem}>Desarrollo Frontend</a>
-              <a href='#services' className={styles.listItem}>Desarrollo Backend</a>
-              <a href='#services' className={styles.listItem}>Chatbots con IA</a>
-              <a href='#services' className={styles.listItem}>Medios Audiovisuales y transmisiones</a>
-             
+              <a href="/front" className={styles.listItem}>
+                Desarrollo Frontend
+              </a>
+              <a href="#back" className={styles.listItem}>
+                Desarrollo Backend
+              </a>
+              <a href="/ia" className={styles.listItem}>
+                Chatbots con IA
+              </a>
+              <a href="/audiovisual" className={styles.listItem}>
+                Medios Audiovisuales y transmisiones
+              </a>
             </ul>
           </div>
 
@@ -34,7 +42,6 @@ const Footer = () => {
               <li className={styles.listItem}>Sobre Nosotros</li>
               <li className={styles.listItem}>Portfolio</li>
               <li className={styles.listItem}>Contacto</li>
-              <li className={styles.listItem}>Blog</li>
             </ul>
           </div>
 
@@ -55,7 +62,10 @@ const Footer = () => {
         </div>
 
         <div className={styles.copyright}>
-          <p>&copy; {new Date().getFullYear()} TechWeave. Todos los derechos reservados.</p>
+          <p>
+            &copy; {new Date().getFullYear()} TechWeave. Todos los derechos
+            reservados.
+          </p>
         </div>
       </div>
     </footer>
