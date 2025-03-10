@@ -11,7 +11,7 @@ const Header = () => {
       <nav className={`container ${styles.nav}`}>
         <div className={styles.logo}>
           <Code2 size={32} color="#4f46e5" />
-          <span className={styles.typing}>TechJE</span>
+          <span className={styles.typing}>Productora</span>
         </div>
 
         <div className={styles.desktopNav}>
